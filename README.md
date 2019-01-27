@@ -2,7 +2,8 @@
 <center><img src="https://user-images.githubusercontent.com/40550117/51434199-6abec680-1c5b-11e9-9983-c116227aa91a.jpg" style="height: 200px"></center>
 
 ## Live Demo
-[hexo-theme-ashes](https://puddlejumper26.github.io/hexo-theme-ashes-showcase/) please click
+Github Code [hexo-theme-ashes](https://puddlejumper26.github.io/hexo-theme-ashes-showcase/) 
+Live Demo [blog display](https://puddlejumper26.github.io/hexo-theme-ashes-showcase/)
 
 ## About this theme
 This theme is inspired by the work [Ashes and Snow of Mr Gregory Colbert](https://gregorycolbert.com/). His art work brings me with minds of peace and the connections among human and nature. Pictures used in this theme are from his work.
