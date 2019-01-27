@@ -4,7 +4,7 @@
 ## Live Demo
 [hexo-theme-ashes](https://puddlejumper26.github.io/hexo-theme-ashes-showcase/) please click
 
-## About this site
+## About this theme
 This theme is inspired by the work [Ashes and Snow of Mr Gregory Colbert](https://gregorycolbert.com/). His art work brings me with minds of peace and the connections among human and nature. Pictures used in this theme are from his work.
 
 This website is completely built with Hexo, based on the theme [landfarz](https://github.com/wizardforcel/hexo-theme-landfarz). Redeveloped by [Puddlejumper26](https://github.com/puddlejumper26)
