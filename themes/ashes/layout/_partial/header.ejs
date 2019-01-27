@@ -1,0 +1,20 @@
+<center><h1>Ashes and Snow</h1></center>
+
+<div class="alignleft">
+	<!-- config.root, will take the info from the config.yml directly in the root -->
+  <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
+  <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
+</div>
+
+<!-- navbar -->
+<nav id="main-nav" class="alignright">
+  <ul>
+  	<!-- theme.menu take the info from the theme config.yml, and under the menu  -->
+    <% for (var i in theme.menu){ %>
+      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+    <% } %>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+
+<div class="clearfix"></div>

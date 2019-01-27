@@ -1,0 +1,44 @@
+<%- partial('_partial/head') %>
+
+<body>
+  <!-- header -->
+  <header id="header" class="inner">
+  	<%- partial('_partial/header') %>
+  </header>
+
+
+  <!-- content, contains body and sidebar -->
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft">
+    	<div id="wrapper">
+    		<!-- body takes info from index.ejs -->
+    		<%- body %>
+    	</div>
+
+    </div>
+	
+	<!-- sidebar     -->
+    <aside id="sidebar" class="alignright">
+    	<%- partial('_partial/sidebar') %>
+   	</aside>
+    <div class="clearfix"></div>
+  </div>
+
+  
+
+  <!-- footer -->
+  <footer id="footer" class="inner">
+  	<%- partial('_partial/footer') %>
+  </footer>
+
+ 
+  
+  <!-- after footer -->
+  <%- partial('_partial/after_footer') %>
+
+
+</body>
+
+ 
+
+</html>

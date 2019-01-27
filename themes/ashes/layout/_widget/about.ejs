@@ -1,0 +1,40 @@
+
+<div class="widget about">
+  <h2 class="title">About</h2>
+  <div class="entry">
+    
+    <p><span class="widget-about-font">Author:</span> <%= config.author%> </p>
+    <%if (config.country){ %>
+    <p><span class="widget-about-font">Country:</span> <%= config.country%> </p>
+    <% } %>
+    
+    <!-- here use if statement to find whether author put this info or not, if not, then no display -->
+    <%if (config.language){ %>
+    <p><span class="widget-about-font">Language:</span> <%= config.language%> </p>
+    <% } %>
+    
+    
+    <hr id="sidebar-hr">
+    
+    <!-- css in the following part are put into layout.styl -->
+    <div class="widget-icons">  
+     
+        <%if (config.url){ %>
+           <a href="<%= config.url%>" target="blank" title="Personal Website"><img class=""src="https://user-images.githubusercontent.com/40550117/51638774-95f92c80-1f5f-11e9-86ee-b2c7d052194c.png"></a>
+        <% } %>
+        <%if (config.github){ %>
+            <a href="<%= config.github%>" target="blank" title="Github"><img src="https://user-images.githubusercontent.com/40550117/51637591-7c0a1a80-1f5c-11e9-8e0e-ed3e24560d3a.png"></a> 
+        <% } %>
+        <%if (config.facebook){ %>
+            <a href="<%= config.facebook%>" target="blank" title="Facebook"><img src="https://user-images.githubusercontent.com/40550117/51637593-7c0a1a80-1f5c-11e9-9bd7-8188481ed651.png"></a>
+        <% } %>
+         <%if (config.twitter){ %>
+            <a href="<%= config.twitter%>" target="blank" title="Twitter"><img src="https://user-images.githubusercontent.com/40550117/51637592-7c0a1a80-1f5c-11e9-8263-8da40bca974d.png"></a>
+        <% } %>
+         <%if (config.zhihu){ %>
+            <a href="<%= config.zhihu%>" target="blank" title="知乎"><img src="https://user-images.githubusercontent.com/40550117/51637590-7b718400-1f5c-11e9-9b43-449f30df7771.png"></a>
+        <% } %>
+    </div>
+
+</div>
+  

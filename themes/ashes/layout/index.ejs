@@ -1,0 +1,56 @@
+
+<style>
+
+ 
+
+/*.post-title{
+  border: 0px solid green;
+  text-align: left;
+  padding-top: 10px;
+
+}
+
+.post-title>span{
+  padding-left: 20px;
+  font-size: 1em !important;
+}
+.post-title>a{
+  padding-left: 20px;
+  font-size: 2em !important;
+}*/
+
+
+</style>
+
+<section class="posts">
+  <% page.posts.each(function (post) { %>
+    
+    <article class="post">
+      
+      <div class="post-title">
+         <a class="post-title-link" href="<%- url_for(post.path) %>" ><%= post.title %></a><br><span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+      </div>
+       <!-- post.excerpt is used for take short message for the home page display, but inside the articles, should add a --> 
+       <!--more--> 
+       <!--,before which will be display on the home page. -->
+      <div class="post-content">
+        <%- post.content %>
+        <!-- if here is post.content, then it shows the entire article of each blog on the home page -->
+      </div>
+    </article>
+  
+  <% }) %>
+</section>
+
+<!-- 增加页面底部的不同页数, 在archive.ejs当中也有 -->
+
+<% if (page.total > 1){ %>
+  <nav id="page-nav">
+    <% var prev_text = "&laquo; " + __('prev');
+       var next_text = __('next') + " &raquo;"%>
+    <%- paginator({
+      prev_text: prev_text,
+      next_text: next_text
+    }) %>
+  </nav>
+  <% } %>

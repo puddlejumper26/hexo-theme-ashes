@@ -1,0 +1,155 @@
+*
+  margin 0
+  padding 0
+  font-family font-default
+
+body
+  color color-font
+  font-size 14px
+  text-shadow 1px 1px 1px rgba(0,0,0,0.5)
+  @media screen and (max-width: 1260px)
+    margin 0 30px
+  @media screen and (max-width: 600px)
+    font-size 13px
+
+
+h1, h2, h3, h4, h5, h6
+  font-family font-title
+
+h1
+  font-size 1.8em
+
+h2
+  font-size 1.5em
+
+h3
+  font-size 1.3em
+
+a
+  text-decoration none
+  color color-link
+  &:hover
+    text-decoration underline
+
+
+
+.alignleft
+  float left
+
+.alignright
+  float right
+
+.clearfix
+  clearfix()
+
+.inner
+  width page-width
+  margin 0 auto
+  @media screen and (max-width: 1260px)
+    width 100%
+
+#main-col
+  width 900px
+  @media screen and (max-width: 1260px)
+    width 100%
+    margin-right -300px
+  @media screen and (max-width: 900px)
+    margin-right 0
+    float none
+
+#wrapper
+  @media screen and (max-width: 1260px)
+    margin-right 300px
+  @media screen and (max-width: 900px)
+    margin-right 0
+    
+// This ID in the after_footer.ejs
+#bg
+  background-image img-background
+  background-color color-background
+  background-attachment fixed
+  background-repeat no-repeat
+  background-position center
+  background-size cover
+  height 100%
+  left 0
+  position fixed
+  top 0
+  width 100%
+  z-index -1
+  
+// clock for layout.ejs
+#clock
+  width 100%
+  text-align center
+  background rgba(0,0,0,0.65)
+  margin 10px auto
+  padding 20px 0
+  color white
+  border-radius 17px
+  
+  span
+    color #000
+    width 80px
+    line-height 2
+    // background #fbfbfb
+    background white
+    border 2px solid #b4b4b4
+    margin 0 10px
+    padding 0 10px
+    
+
+// index.ejs  
+.post
+  &:hover
+    background-color rgba(0,0,0,0.85)
+
+  .post-title
+    border 0px solid green
+    text-align left
+    padding-top 10px
+  
+    span
+      padding-left 20px
+      font-size 1em 
+    
+    a
+      padding-left 20px
+      font-size 2em
+
+// 页面底部的数字的设定
+#page-nav
+  clearfix()
+  // margin: block-margin auto
+  background: #fff
+  background-color rgba(0,0,0,0.65)
+  margin-bottom 10px
+  &:hover
+    background-color rgba(0,0,0,0.8)
+  border-radius: 17px
+  text-align: center
+  color: color-grey
+  overflow: hidden
+  a, span
+    padding: 10px 20px
+    line-height: 3
+    height: 5ex
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      background: color-grey
+      color: #fff
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: color-default
+    font-weight: bold
+  .space
+    color: color-border

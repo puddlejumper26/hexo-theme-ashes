@@ -1,0 +1,26 @@
+# menu part directly connects with 
+# - header.ejs - theme.menu
+menu:
+  Home: /
+  Archives: /archives
+  # Tags: /tags
+  About: /about
+
+
+sidebar: right
+
+widgets:
+- about
+- category
+- recent_posts
+- tag
+- tagcloud
+
+
+fancybox: true
+
+google_analytics:
+rss: 
+google_site_verification: 
+baidu_site_verification: 
+icon: 

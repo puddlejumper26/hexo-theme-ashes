@@ -1,0 +1,31 @@
+<!-- clock -->
+    <div class="clock" id="clock" style="">
+        <span></span>:<span></span>:<span></span>
+    </div>
+
+
+ <!-- here is to take all the sidebar elements into the display, if one element to be added, 1st, to creat the name.ejs under _widget folder, then 2nd to put this name under the list in the theme config.yml -->
+<% theme.widgets.forEach(function(widget)
+{ %>
+   <%- partial('../_widget/' + widget) %>
+<% }); %>
+
+<script>
+    // clock
+        var oClock = document.getElementById("clock");
+        var aSpan = oClock.getElementsByTagName("span");
+
+        setInterval(getTimes, 1000);
+        getTimes();
+        function getTimes() {
+            var oDate = new Date();
+            var aDate = [oDate.getHours(), oDate.getMinutes(), oDate.getSeconds()];
+
+            for (var i in aDate) { aSpan[i].innerHTML = format(aDate[i]) }
+        }
+        function format(a) {
+            // 0$1 it is to show the numbers with two digits when it is still a single digit
+            return a.toString().replace(/^(\d)$/, '0$1');
+        }
+
+</script>
