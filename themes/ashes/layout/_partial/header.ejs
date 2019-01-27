@@ -11,7 +11,7 @@
   <ul>
   	<!-- theme.menu take the info from the theme config.yml, and under the menu  -->
     <% for (var i in theme.menu){ %>
-      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+      <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
     <% } %>
   </ul>
   <div class="clearfix"></div>
