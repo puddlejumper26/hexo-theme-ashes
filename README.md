@@ -1,4 +1,4 @@
-# hexo-theme-ashes
+<h1 align="center"> Ashes (Hexo theme) </h1>
 <center><img src="https://user-images.githubusercontent.com/40550117/51434199-6abec680-1c5b-11e9-9983-c116227aa91a.jpg" style="height: 200px"></center>
 
 ## Live Demo
